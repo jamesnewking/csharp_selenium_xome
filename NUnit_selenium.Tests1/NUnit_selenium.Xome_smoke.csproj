@@ -48,12 +48,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="POM\screenshot.cs" />
+    <Compile Include="POM\pagetitle.cs" />
+    <Compile Include="POM\propertypic.cs" />
+    <Compile Include="POM\searchcity.cs" />
+    <Compile Include="POM\userlogin.cs" />
+    <Compile Include="POM\userlogout.cs" />
     <Compile Include="TestClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Selenium.Chrome.WebDriver.2.42\build\Selenium.Chrome.WebDriver.targets" Condition="Exists('..\packages\Selenium.Chrome.WebDriver.2.42\build\Selenium.Chrome.WebDriver.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
